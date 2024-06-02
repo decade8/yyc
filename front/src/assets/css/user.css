@@ -1,0 +1,35 @@
+.user {
+  width: 1000px;
+  height: 300px;
+  margin-left: 200px;
+}
+
+.image {
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.imf {
+  float: left;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin-left: 70px;
+  background-color: white;
+}
+
+/* 头像图片 自适应div大小  不同css文件的相同id会覆盖*/
+#touxiang {
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 22px;
+}
+
+/* 用户信息列表 */
+#table {
+  max-width: 500px;
+  max-height: 300px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.demo2.Mapper.RegisterMapper">
+
+<!--注册插入用户信息-->
+    <insert id="registerAccount" parameterType="org.example.demo2.dto.Account" useGeneratedKeys="true" keyProperty="id">
+        insert into scorelogin (name,username,password,email,year,avatar) values (#{account.name},#{account.username},#{account.password},#{account.email},#{account.year},#{account.avatar})
+    </insert>
+<!--注册的时候检验用户名是否重复-->
+    <select id="findName2" resultType="java.lang.String">
+        select name from scorelogin where username=#{username}
+    </select>
+
+<!--插入作者信息-->
+    <insert id="registerWriter" parameterType="org.example.demo2.dto.Writer" useGeneratedKeys="true" keyProperty="id">
+        insert into writer (xuhao,date,name,province,city,address,emailcode) values (#{writer.xuhao},#{writer.date},#{writer.name},#{writer.province},#{writer.city},#{writer.address},#{writer.emailcode})
+    </insert>
+</mapper>

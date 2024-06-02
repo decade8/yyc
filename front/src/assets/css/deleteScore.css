@@ -1,0 +1,36 @@
+.el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+.el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+#deleteScore_retruen {
+    position: absolute;
+    right: 50px;
+}
+#delteScore_studentId {
+    position: relative;
+    left: -70px;
+}
+#deleteScore_studentId_input {
+    position: relative;
+    top: -60px;
+    left: 200px;
+    height: 30px;
+}
+#deleteScore_submit, #deleteScore_reset {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: darkslategray;
+}
+#deleteScore_reset {
+    position: relative;
+    left: 120px;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.demo2.Mapper.LoginMapper">
+<!--传递给前端是否登录成功的信息，返回massage为string类型-->
+    <select id="loginTosystem" resultType="java.lang.String">
+        select username,password from scorelogin where username=#{username} and password=#{password}
+    </select>
+<!--    传递给前端用户名-->
+    <select id="findName" resultType="java.lang.String">
+        select name from scorelogin where username=#{username}
+    </select>
+<!--传递给前端用户整体数据-->
+    <select id="findMsg" resultType="org.example.demo2.dto.Account">
+        select * from scorelogin where username=#{username}
+    </select>
+
+<!--    获取全部作者对象的信息-->
+    <select id="findWriter" resultType="org.example.demo2.dto.Writer">
+        select xuhao,date,name,province,city,address,emailcode from writer
+    </select>
+<!--分页获取作者数据-->
+    <select id="findWriter1"  parameterType="int" resultType="org.example.demo2.dto.Writer">
+        select xuhao,date,name,province,city,address,emailcode from writer limit #{pagenow},#{pagesize}
+    </select>
+<!--    获取查询数据-->
+    <select id="findWriter2" resultType="org.example.demo2.dto.Writer">
+        select xuhao,date,name,province,city,address,emailcode from writer where name like '%${name}%' limit #{pagenow},#{pagesize}
+    </select>
+<!--    获取要修改的作者的数据-->
+    <select id="findone"  parameterType="int" resultType="org.example.demo2.dto.Writer">
+        select * from writer where xuhao=#{xuhao}
+    </select>
+<!--    删除作者的数据-->
+    <delete id="deleteWriter">
+        delete from writer where xuhao=#{xuhao}
+    </delete>
+<!--    修改作者的数据-->
+    <update id="updateWriter" parameterType="org.example.demo2.dto.Writer">
+        update writer
+        set date=#{writer.date},name=#{writer.name},province=#{writer.province},city=#{writer.city},address=#{writer.address},emailcode=#{writer.emailcode}
+        where xuhao=#{writer.xuhao}
+    </update>
+</mapper>

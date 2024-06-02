@@ -1,0 +1,664 @@
+/* .el-header,
+.el-footer {
+    text-align: center;
+    line-height: 60px;
+}
+
+
+.el-main {
+    text-align: center;
+} */
+
+/* 圆角 */
+.circle {
+    border-radius: 64px;
+
+}
+
+
+/*-------------登录样式---------------*/
+
+/* QQ 微信样式 */
+#qqlogo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    right: 10px;
+
+}
+
+#wxlogo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    right: 10px;
+}
+
+#zfblogo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    right: 10px;
+}
+
+.login1 {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 650px;
+    /* left: 250px; */
+    left: 340px;
+
+}
+
+.login_2 {
+    position: relative;
+    float: left;
+    width: 40%;
+    text-align: center;
+    /* margin-left: 120px; */
+    width: 300px;
+}
+
+.login3 {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 300px;
+
+}
+
+.QQ {
+    position: relative;
+    width: 260px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    /* top: 60px;
+    left: 52px; */
+}
+
+.WX {
+    position: relative;
+    width: 260px;
+    color: white;
+    background-color: lightgreen;
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    /* top: 123px;
+    left: -207px; */
+}
+
+.ZFB {
+    position: relative;
+    width: 260px;
+    background-color: darkgray;
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    /* top: 132px;
+    left: -77px; */
+}
+
+#login_login {
+    position: relative;
+    top: 60px;
+}
+
+#login_register {
+    position: relative;
+    top: 60px;
+}
+
+#login_forget {
+    position: relative;
+    top: 60px;
+}
+
+/* 忘记密码页面 */
+
+.forget1 {
+    position: relative;
+    float: left;
+    width: 300px;
+    /* left: 250px; */
+    left: 340px;
+
+}
+
+.forget2 {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 650px;
+    /* left: 250px; */
+    left: 340px;
+}
+
+#forget_usernameInfo {
+    position: relative;
+    right: 180px;
+}
+
+#forget_passwordInfo0 {
+    position: relative;
+    right: 180px;
+}
+
+#forget_passwordInfo {
+    position: relative;
+    right: 180px;
+}
+
+#forget_passwordInfo1 {
+    position: relative;
+    right: 180px;
+}
+
+#forget_submit {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    /* background-color: #fff; */
+    top: -46px;
+    left: -56px;
+    /* color: #2c3e50; */
+}
+
+#forget_registerButton {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    /* background-color: #fff; */
+    top: -46px;
+    left: -25px;
+    /* color: #2c3e50; */
+}
+
+#forget_input_username {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+}
+
+#forget_input_password0 {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+
+}
+
+#forget_input_password {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+}
+
+#forget_input_password1 {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+
+}
+
+/* 登录页面 */
+#login_usernameInfo {
+    position: relative;
+    /* right: 250px;
+    top: 60px; */
+}
+
+#login_input_username {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+    left: 157px;
+}
+
+#login_passwordInfo {
+    position: relative;
+    top: -58px;
+    /* right: 250px;
+    left: 100px; */
+}
+
+#login_input_password {
+    position: relative;
+    top: -120px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+    left: 157px;
+}
+
+#login_submit {
+    position: relative;
+    top: -100px;
+    width: 100px;
+    height: 50px;
+    right: -128px;
+}
+
+#login_registerButton {
+    position: relative;
+    top: -100px;
+    width: 100px;
+    height: 50px;
+    right: -163px;
+    /* background-color: #fff;
+    color: #2c3e50; */
+}
+
+/*-----------注册样式-----------*/
+.register1 {
+    position: relative;
+    float: left;
+    width: 300px;
+    top: -20px;
+    left: 550px;
+
+}
+
+/* 放置文件上传的盒子 */
+.register2 {
+    position: relative;
+    float: left;
+    width: 300px;
+    left: 540px;
+}
+
+.avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+
+.avatar-uploader-icon {
+    font-size: 70px;
+    color: #8c939d;
+    width: 319px;
+    height: 319px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+}
+
+/* 头像 */
+/* #touxiang {
+    position: relative;
+    left: 600px;
+} */
+
+
+/* #register_nameInfo {
+    position: relative;
+    right: 180px;
+}
+
+#register_input_name {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+}
+
+#register_usernameInfo {
+    position: relative;
+    right: 180px;
+}
+
+#register_input_username {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+}
+
+#register_passwordInfo {
+    position: relative;
+    right: 180px;
+}
+
+#register_input_password {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+}
+
+#register_emailInfo {
+    position: relative;
+    right: 180px;
+}
+
+#register_input_email {
+    position: relative;
+    top: -60px;
+    outline: none;
+    width: 260px;
+    border-radius: 64px;
+} */
+/* 忘记密码页的返回 */
+#register_return1 {
+    position: relative;
+    right: -10px;
+    top: -40px;
+    color: cornflowerblue;
+}
+
+#register_submit {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    /* background-color: #fff; */
+    top: 506px;
+    left: -206px;
+    /* color: #2c3e50; */
+}
+
+#register_registerButton {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    /* background-color: #fff; */
+    top: 506px;
+    left: -186px;
+    /* color: #2c3e50; */
+}
+
+#register_return {
+    position: relative;
+    right: 137px;
+    top: 506px;
+    color: cornflowerblue;
+}
+
+#register_forget {
+    position: relative;
+    right: -179px;
+    top: -102px;
+}
+
+/* HTML: <div class="loader"></div> */
+/* 啄木鸟效果 */
+.loader {
+    width: 20px;
+    height: 80px;
+    background: #935936;
+    position: relative;
+    left: 47.5vw;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -2.4vw;
+    width: 25px;
+    height: 60px;
+    background:
+        radial-gradient(farthest-side, #fff 92%, #0000) 60% 6px/4px 4px,
+        radial-gradient(50% 60%, #53707b 92%, #0000) center/70% 55%,
+        radial-gradient(farthest-side, #53707b 92%, #0000) 50% 3px/14px 14px,
+        radial-gradient(142% 100% at bottom right, #0000 64%, #53707b 65%) bottom/57% 40%,
+        conic-gradient(from -120deg at right, #53707b 36deg, #0000 0)100% 3px/51% 12px,
+        conic-gradient(from 120deg at top left, #0000, #ef524a 2deg 40deg, #0000 43deg) top/100% 10px;
+    background-repeat: no-repeat;
+    transform: rotate(-26deg);
+    transform-origin: 100% 80%;
+    animation: l16 .25s infinite linear alternate;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    left: -6px;
+    bottom: 15px;
+    border-radius: 100px 0 0 100px;
+    background: #53707b;
+}
+
+.block {
+    position: relative;
+    top: -50px;
+    left: -20px;
+
+}
+
+.demonstration {
+    position: relative;
+    left: -45px;
+}
+
+@keyframes l16 {
+    100% {
+        transform: rotate(0)
+    }
+}
+
+
+/* 小于650px的样式 */
+@media screen and (max-width:800px) {
+
+    /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    #qqlogo {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -2px;
+        right: 10px;
+
+    }
+
+    #wxlogo {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -2px;
+        right: 10px;
+    }
+
+    #zfblogo {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: -2px;
+        right: 10px;
+    }
+
+    /* el container样式 */
+    .firstcontainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login1 {
+        position: relative;
+        float: left;
+        text-align: center;
+        width: 300px;
+        height: 700px;
+        left: 160px;
+
+    }
+
+    .login_2 {
+        position: relative;
+        /* float: left; */
+        width: 300px;
+        text-align: center;
+        /* left: 5.5vw; */
+    }
+
+    .login3 {
+        position: relative;
+        /* /* float: left; */
+        width: 300px;
+        text-align: center;
+        top: 50px;
+        left: -90px;
+        /* margin-left: 120px; */
+        /* left: 100px; */
+        /* margin-left: 200px;
+        left: -10vw; */
+    }
+
+    .QQ {
+        position: relative;
+        width: 260px;
+        color: white;
+        background-color: dodgerblue;
+        border: none;
+        height: 45px;
+        border-radius: 5px;
+        top: 26px;
+        left: 60px;
+    }
+
+    .WX {
+        position: relative;
+        width: 260px;
+        color: white;
+        background-color: lightgreen;
+        margin-top: 10px;
+        border: none;
+        height: 45px;
+        border-radius: 5px;
+        top: 38px;
+        left: 60px;
+    }
+
+    .ZFB {
+        position: relative;
+        width: 260px;
+        background-color: darkgray;
+        margin-top: 10px;
+        border: none;
+        height: 45px;
+        border-radius: 5px;
+        top: 46px;
+        left: 60px;
+    }
+
+    #login_usernameInfo {
+        position: relative;
+        /* right: 318px;
+        top: 260px; */
+    }
+
+    #login_input_username {
+        position: relative;
+        /* top: 73px; */
+        outline: none;
+        width: 260px;
+        border-radius: 64px;
+        /* left: -50px; */
+    }
+
+    #login_passwordInfo {
+        position: relative;
+        /* top: 62px;
+        left: -240px; */
+
+    }
+
+    #login_input_password {
+        position: relative;
+        /* top: 2px; */
+        outline: none;
+        width: 260px;
+        border-radius: 64px;
+        /* left: -50px; */
+    }
+
+    #login_submit {
+        position: relative;
+        /* top: 0px; */
+        width: 100px;
+        height: 50px;
+        /* right: 37px; */
+    }
+
+    #login_registerButton {
+        position: relative;
+        /* top: 0px; */
+        width: 100px;
+        height: 50px;
+        /* right: 37px; */
+        /* background-color: #fff;
+        color: #2c3e50; */
+    }
+
+    #register_forget {
+        position: relative;
+        /* right: 19px;
+        top: 0px; */
+    }
+
+
+    /* 头像上传样式 */
+    .avatar-uploader .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .avatar-uploader .el-upload:hover {
+        border-color: #409EFF;
+    }
+
+    .avatar-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 178px;
+        height: 178px;
+        line-height: 178px;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 178px;
+        height: 178px;
+        display: block;
+    }
+
+}

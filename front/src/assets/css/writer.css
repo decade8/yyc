@@ -1,0 +1,40 @@
+/* 作者管理页的导航栏*/
+
+.header {
+  height: 50px;
+  /* background-color: white; */
+}
+
+/* 新建按钮样式 */
+.xjbutton {
+  display: inline-block;
+  width: 1840px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: -900px
+}
+
+/* 作者管理页的内容样式 */
+/* #content {
+  margin-top: 10px;
+} */
+
+/* 整体搜索栏框架 */
+.search {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+}
+
+/* 纯搜索框 */
+.search0 {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+}
+
+/* 搜索按钮 */
+.search1 {
+  display: inline-block;
+  position: relative;
+}

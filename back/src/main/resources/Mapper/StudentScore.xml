@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.demo2.Mapper.StudentScoreMapper">
+
+<!--添加学生成绩-->
+    <insert id="addStudentScore" parameterType="org.example.demo2.dto.StudentScoreManage" useGeneratedKeys="true" keyProperty="id">
+        insert into studentscoremanage (studentId,studentName,chineseScore,mathScore,englishScore)
+        values (#{ssm.studentId},#{ssm.studentName},#{ssm.chineseScore},#{ssm.mathScore},#{ssm.englishScore})
+    </insert>
+<!--    判断该学生的数据是否已经存在（根据学生学号）-->
+    <select id="findStudentId" resultType="java.lang.String">
+        select studentId from studentscoremanage where studentId=#{studentId}
+    </select>
+<!--    删除学生成绩(根据学生学号)-->
+    <delete id="deleteStudentByStudentId">
+        delete from studentscoremanage where studentId=#{studentId}
+    </delete>
+<!--    修改学生成绩（根据学生学号）-->
+    <update id="updateStudentScore" parameterType="org.example.demo2.dto.StudentScoreManage">
+        update studentscoremanage
+        set chineseScore=#{ssm.chineseScore},mathScore=#{ssm.mathScore},englishScore=#{ssm.englishScore}
+        where studentId=#{ssm.studentId}
+    </update>
+<!--    显示所有学生成绩信息-->
+    <select id="findStudentScoreInfo" resultType="org.example.demo2.dto.StudentScoreManage">
+        select studentId,studentName,chineseScore,mathScore,englishScore from studentscoremanage
+    </select>
+</mapper>

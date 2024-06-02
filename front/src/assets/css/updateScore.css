@@ -1,0 +1,36 @@
+.el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+.el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+#updateScore_studentId, #updateScore_chineseScore, #updateScore_mathScore, #updateScore_englishScore {
+    position: relative;
+    left: -70px;
+}
+#updateScore_return {
+    position: absolute;
+    right: 50px;
+}
+#updateScore_studentId_input, #updateScore_chineseScore_input, #updateScore_mathScore_input, #updateScore_englishScore_input {
+    position: relative;
+    top: -60px;
+    left: 200px;
+    height: 30px;
+}
+#updateScore_submit, #updateScore_reset {
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: darkslategray;
+}
+#updateScore_reset {
+    position: relative;
+    left: 120px;
+}
